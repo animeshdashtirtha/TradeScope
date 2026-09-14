@@ -1,0 +1,4 @@
+import { Pressable, StyleSheet, Text } from 'react-native';
+import { colors } from '../theme/colors';
+export function FilterChip({ label, active, onPress }: { label: string; active: boolean; onPress: () => void }) { return <Pressable accessibilityRole="button" accessibilityLabel={`${label} filter`} accessibilityState={{ selected: active }} onPress={onPress} style={[styles.chip, active && styles.active]}><Text style={[styles.label, active && styles.activeLabel]}>{label}</Text></Pressable>; }
+const styles = StyleSheet.create({ chip: { borderWidth: 1, borderColor: colors.border, borderRadius: 99, paddingHorizontal: 13, paddingVertical: 8, marginRight: 8, backgroundColor: colors.surface }, active: { backgroundColor: colors.accent, borderColor: colors.accent }, label: { color: colors.muted, fontSize: 12, fontWeight: '600' }, activeLabel: { color: colors.shell } });

@@ -1,0 +1,4 @@
+import { StyleSheet, Text, View } from 'react-native';
+import { colors } from '../theme/colors';
+export function SummaryCard({ label, value, accent }: { label: string; value: string; accent: string }) { return <View style={styles.card}><View style={[styles.bar, { backgroundColor: accent }]} /><Text style={styles.label}>{label}</Text><Text style={styles.value}>{value}</Text></View>; }
+const styles = StyleSheet.create({ card: { flex: 1, minWidth: 100, backgroundColor: colors.surface, borderRadius: 12, padding: 12, borderWidth: 1, borderColor: colors.border }, bar: { width: 18, height: 3, borderRadius: 2, marginBottom: 12 }, label: { color: colors.subtle, fontSize: 10, lineHeight: 13 }, value: { color: colors.text, fontSize: 17, fontWeight: '800', marginTop: 5 } });

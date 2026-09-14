@@ -1,0 +1,12 @@
+import { InsiderTrade } from '../types/trade';
+
+export const mockTrades: InsiderTrade[] = [
+  { id: 'ng-001', ticker: 'NGS', company: 'NovaGrid Systems', sector: 'Energy Tech', insider: 'Mara Chen', role: 'CEO', type: 'Purchase', transactionCode: 'P', shares: 18000, pricePerShare: 42.8, value: 770400, transactionDate: '2026-09-12', filedAt: '2026-09-13', signal: 'Bullish', signalStrength: 92 },
+  { id: 'eh-002', ticker: 'ELIO', company: 'Elio Health Labs', sector: 'Healthcare', insider: 'Jon Bell', role: 'CFO', type: 'Purchase', transactionCode: 'P', shares: 9400, pricePerShare: 31.2, value: 293280, transactionDate: '2026-09-11', filedAt: '2026-09-12', signal: 'Bullish', signalStrength: 76 },
+  { id: 'pv-003', ticker: 'PRVX', company: 'Parallax Ventures', sector: 'Fintech', insider: 'Rhea Patel', role: 'Director', type: 'Sale', transactionCode: 'S', shares: 22000, pricePerShare: 18.6, value: 409200, transactionDate: '2026-09-10', filedAt: '2026-09-11', signal: 'Bearish', signalStrength: 64 },
+  { id: 'ct-004', ticker: 'CIRR', company: 'Cirrus Transit', sector: 'Mobility', insider: 'Owen Frost', role: 'CEO', type: 'Purchase', transactionCode: 'P', shares: 12500, pricePerShare: 27.4, value: 342500, transactionDate: '2026-09-09', filedAt: '2026-09-10', signal: 'Bullish', signalStrength: 83 },
+  { id: 'wf-005', ticker: 'WFLD', company: 'Wildfield Foods', sector: 'Consumer', insider: 'Nia Okafor', role: 'Officer', type: 'Sale', transactionCode: 'S', shares: 30000, pricePerShare: 11.8, value: 354000, transactionDate: '2026-09-08', filedAt: '2026-09-09', signal: 'Watch', signalStrength: 48 },
+  { id: 'as-006', ticker: 'ASTR', company: 'Asterion Cloud', sector: 'Software', insider: 'Cal Reyes', role: 'CFO', type: 'Purchase', transactionCode: 'P', shares: 7600, pricePerShare: 56.1, value: 426360, transactionDate: '2026-09-07', filedAt: '2026-09-08', signal: 'Bullish', signalStrength: 71 },
+  { id: 'hm-007', ticker: 'HUMN', company: 'Humanitec Robotics', sector: 'Automation', insider: 'Sasha Lin', role: 'Director', type: 'Sale', transactionCode: 'S', shares: 6100, pricePerShare: 74.5, value: 454450, transactionDate: '2026-09-06', filedAt: '2026-09-07', signal: 'Bearish', signalStrength: 58 },
+  { id: 'sk-008', ticker: 'SKYL', company: 'Skyline Materials', sector: 'Industrials', insider: 'Theo Wright', role: 'Officer', type: 'Purchase', transactionCode: 'P', shares: 15400, pricePerShare: 22.9, value: 352660, transactionDate: '2026-09-05', filedAt: '2026-09-06', signal: 'Watch', signalStrength: 52 },
+];
