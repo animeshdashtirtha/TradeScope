@@ -38,7 +38,7 @@ export function FilterChip({ label, active, onPress }: { label: string; active: 
 
   return (
     <Pressable
-      style={{ alignSelf: 'flex-start' }}
+      style={styles.hitTarget}
       accessibilityRole="button"
       accessibilityLabel={`${label} filter`}
       accessibilityState={{ selected: active }}
@@ -54,15 +54,19 @@ export function FilterChip({ label, active, onPress }: { label: string; active: 
 }
 
 const styles = StyleSheet.create({
+  hitTarget: {
+    alignSelf: 'flex-start',
+    minHeight: 44,
+    justifyContent: 'center',
+    marginRight: 8,
+    marginBottom: 8,
+  },
   chip: {
-    ...Platform.select({ native: { minHeight: 44 }, default: {} }),
     borderWidth: 1,
     borderColor: colors.border,
     borderRadius: 12,
     paddingHorizontal: 13,
-    paddingVertical: 10,
-    marginRight: 8,
-    marginBottom: 8,
+    paddingVertical: 8,
     backgroundColor: colors.surface,
     shadowColor: colors.shadowBase,
     shadowOpacity: 0.07,

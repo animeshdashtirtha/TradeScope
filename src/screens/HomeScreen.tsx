@@ -213,8 +213,6 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     borderColor: `${colors.accent}45`,
     borderWidth: 1,
-    borderTopColor: colors.cardHighlight,
-    borderTopWidth: 0.5,
   },
   searchPlaceholder: { flex: 1, color: colors.muted, fontSize: 14, fontWeight: '600' },
   sectionHeading: {

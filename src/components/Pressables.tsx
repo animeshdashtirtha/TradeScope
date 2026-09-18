@@ -68,7 +68,13 @@ export function PressLink({ children, onPress }: PressLinkProps) {
     Animated.timing(opacity, { toValue: 1, duration: 200, easing: Easing.out(Easing.cubic), useNativeDriver: Platform.OS !== 'web' }).start();
   };
   return (
-    <Pressable accessibilityRole="button" onPress={onPress} onPressIn={onPressIn} onPressOut={onPressOut}>
+    <Pressable
+      accessibilityRole="button"
+      hitSlop={8}
+      onPress={onPress}
+      onPressIn={onPressIn}
+      onPressOut={onPressOut}
+    >
       <Animated.View style={{ opacity }}>{children}</Animated.View>
     </Pressable>
   );
