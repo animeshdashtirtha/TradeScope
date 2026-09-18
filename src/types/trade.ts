@@ -1,6 +1,6 @@
 export type TransactionType = 'Purchase' | 'Sale';
 export type InsiderRole = 'CEO' | 'CFO' | 'Director' | 'Officer';
-export type Signal = 'Bullish' | 'Bearish' | 'Watch';
+export type SignalStrength = 'High' | 'Medium' | 'Low';
 
 export interface InsiderTrade {
   id: string;
@@ -16,6 +16,6 @@ export interface InsiderTrade {
   value: number;
   transactionDate: string;
   filedAt: string;
-  signal: Signal;
-  signalStrength: number;
+  signal: string;
+  signalStrength: SignalStrength;
 }
